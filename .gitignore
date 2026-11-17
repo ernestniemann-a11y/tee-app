@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Dependencies & builds
+node_modules/
+dist/
+build/
+.expo/
+*.log
+
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
