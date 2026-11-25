@@ -1,0 +1,12 @@
+[
+  { "id": "teen-tech-helper", "title": "Teen tech helper", "org": "Neighborhood library", "type": "Volunteering", "deadline": null, "grades": "Grades 9 to 12", "pay": "Unpaid", "location": "In person", "url": "https://example.org/", "sample": true },
+  { "id": "summer-coding-intern", "title": "Summer coding intern", "org": "Local startup", "type": "Internship", "deadline": "2027-03-15", "grades": "Grades 11 to 12", "pay": "Paid", "location": "Hybrid", "url": "https://example.org/", "sample": true },
+  { "id": "meet-a-data-scientist", "title": "Meet a data scientist", "org": "School career center", "type": "Career", "deadline": "2027-04-02", "grades": "All grades", "pay": "Free", "location": "In person", "url": "https://example.org/", "sample": true },
+  { "id": "hospital-youth-volunteer", "title": "Hospital youth volunteer", "org": "City hospital", "type": "Volunteering", "deadline": "2027-02-28", "grades": "Ages 15 and up", "pay": "Unpaid", "location": "In person", "url": "https://example.org/", "sample": true },
+  { "id": "museum-teen-guide", "title": "Museum teen guide", "org": "Science museum", "type": "Internship", "deadline": null, "grades": "Grades 10 to 12", "pay": "Paid", "location": "In person", "url": "https://example.org/", "sample": true },
+  { "id": "game-design-talk", "title": "Game design talk", "org": "Community college", "type": "Career", "deadline": "2027-03-08", "grades": "All grades", "pay": "Free", "location": "Online", "url": "https://example.org/", "sample": true },
+  { "id": "robotics-camp-helper", "title": "Robotics camp helper", "org": "Youth center", "type": "Volunteering", "deadline": "2027-05-01", "grades": "Grades 9 to 12", "pay": "Unpaid", "location": "In person", "url": "https://example.org/", "sample": true },
+  { "id": "biotech-lab-intern", "title": "Biotech lab intern", "org": "Research lab", "type": "Internship", "deadline": "2027-02-01", "grades": "Grades 11 to 12", "pay": "Paid", "location": "In person", "url": "https://example.org/", "sample": true },
+  { "id": "nursing-career-day", "title": "Nursing career day", "org": "City hospital", "type": "Career", "deadline": "2027-04-20", "grades": "All grades", "pay": "Free", "location": "In person", "url": "https://example.org/", "sample": true },
+  { "id": "park-cleanup-crew", "title": "Park cleanup crew", "org": "Neighborhood group", "type": "Volunteering", "deadline": null, "grades": "All grades", "pay": "Unpaid", "location": "Outdoors", "url": "https://example.org/", "sample": true }
+]

@@ -1,0 +1,49 @@
+{
+  "subjects": [
+    { "id": "math", "label": "Math", "class": "a high school math class" },
+    { "id": "science", "label": "Science", "class": "a high school science class" },
+    { "id": "english", "label": "English", "class": "a high school English class" },
+    { "id": "history", "label": "History", "class": "a high school history class" },
+    { "id": "world-language", "label": "World Language", "class": "a high school world language class" },
+    { "id": "computer-science", "label": "Computer Science", "class": "a high school computer science class" },
+    { "id": "other", "label": "Other", "class": "a high school class" }
+  ],
+  "goals": [
+    {
+      "id": "quiz",
+      "label": "Quiz me",
+      "template": "Act as my study coach. Ask me 5 questions about {topic} for {class}, one at a time. Wait for my answer before the next question. If I'm wrong, give me a hint before telling me the answer. Don't write any of my homework for me.",
+      "why": "One question at a time makes you pull the answer from memory, so it sticks."
+    },
+    {
+      "id": "explain",
+      "label": "Explain it simply",
+      "template": "Explain {topic} in under 150 words for {class}. Use one everyday example. Then ask me one question to check that I understood.",
+      "why": "A clear audience and a word limit keep the answer short and useful."
+    },
+    {
+      "id": "check",
+      "label": "Check my understanding",
+      "template": "I'm going to explain {topic} in my own words for {class}. Ask me to start. Then tell me what I got right, what I missed, and one thing to review. Don't rewrite it for me.",
+      "why": "You do the thinking first, and the AI only gives feedback."
+    },
+    {
+      "id": "practice",
+      "label": "Give me practice problems",
+      "template": "Give me 5 practice problems about {topic} for {class}, from easy to hard. Don't show any answers until I've tried. Then check my work and explain my mistakes.",
+      "why": "Hiding the answers makes you try first."
+    },
+    {
+      "id": "plan",
+      "label": "Make a study plan",
+      "template": "Make me a 5-day plan to study {topic} for {class}. Keep each day under 20 minutes and end each day with a quick self-check. Ask me what I already know before you start.",
+      "why": "Short daily sessions beat one long cram."
+    },
+    {
+      "id": "brainstorm",
+      "label": "Help me brainstorm",
+      "template": "Help me brainstorm ideas about {topic} for {class}. Ask me 3 questions first, then suggest 5 different directions I could take. Don't write the assignment for me.",
+      "why": "Questions first means the ideas fit what you care about."
+    }
+  ]
+}
