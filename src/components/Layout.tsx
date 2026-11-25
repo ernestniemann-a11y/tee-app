@@ -16,8 +16,8 @@ const tab = ({ isActive }: { isActive: boolean }) =>
 export function Layout() {
   const { xp } = useProgress();
   return (
-    <div className="flex min-h-dvh flex-col">
-      <header className="flex flex-wrap items-center gap-x-4 gap-y-2 px-6 py-4 md:px-10">
+    <div className="mx-auto flex min-h-dvh w-full max-w-[1500px] flex-col">
+      <header className="flex flex-wrap items-center gap-x-4 gap-y-2 px-6 py-3 md:px-10">
         <span className="mr-5 text-[28px] font-bold">TEE</span>
         <nav aria-label="Main" className="flex flex-auto flex-wrap gap-2">
           {TABS.map((t) => (

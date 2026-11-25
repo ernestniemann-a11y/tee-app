@@ -67,7 +67,7 @@ function LessonPlayer({ course, lesson }: { course: Course; lesson: Lesson }) {
       ) : (
         <Explainer explainer={lesson.explainer} title={lesson.title} onDone={onContinue} />
       )}
-      {step && answer && <FeedbackBar key={step.id} right={answer.right} gain={answer.gain} why={step.why} learnMore={step.learnMore} onContinue={onContinue} />}
+      {step && answer && <FeedbackBar key={`${step.id}-feedback`} right={answer.right} gain={answer.gain} why={step.why} learnMore={step.learnMore} onContinue={onContinue} />}
     </div>
   );
 }

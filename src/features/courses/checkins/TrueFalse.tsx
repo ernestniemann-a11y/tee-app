@@ -15,7 +15,7 @@ export function TrueFalse({ step, answered, onAnswer }: CheckInProps<TrueFalseSt
   };
   return (
     <main className="mx-auto flex w-full max-w-[1000px] flex-1 flex-col justify-center gap-5 px-6 py-5 [perspective:1600px] md:px-10">
-      <m.div initial={false} animate={{ rotateY: flipped ? 180 : 0 }} transition={{ duration: 0.5 }} className="grid min-h-[300px] transform-3d">
+      <m.div initial={false} animate={{ rotateY: flipped ? 180 : 0 }} transition={{ duration: 0.5 }} className="grid min-h-[260px] transform-3d">
         <div className={`${face} border-2 border-edge bg-panel`}>
           <PageTitle tab={step.statement} className="text-5xl leading-[1.08] tracking-[-0.02em] xl:text-6xl">
             {step.statement}
@@ -25,7 +25,7 @@ export function TrueFalse({ step, answered, onAnswer }: CheckInProps<TrueFalseSt
           {step.answer ? "True" : "False"}
         </div>
       </m.div>
-      <div className={`grid grid-cols-2 gap-5 ${answered ? "invisible" : ""}`}>
+      <div className={`grid-cols-2 gap-5 ${answered ? "hidden" : "grid"}`}>
         {[true, false].map((value) => (
           <button key={String(value)} type="button" disabled={answered} onClick={() => pick(value)} className="min-h-[100px] rounded-[14px] border-2 border-edge bg-panel text-[32px] font-bold hover:border-white">
             {value ? "True" : "False"}

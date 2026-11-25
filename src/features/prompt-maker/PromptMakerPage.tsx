@@ -46,15 +46,20 @@ export function PromptMakerPage() {
   };
 
   return (
-    <main className="flex flex-1 flex-wrap gap-10 px-6 pt-5 pb-10 md:px-10">
-      <div className="flex min-w-0 flex-[2_1_400px] flex-col gap-6">
+    <main className="flex flex-1 flex-wrap gap-10 px-6 pt-3 pb-5 md:px-10">
+      <div className="flex min-w-0 flex-[1_1_420px] flex-col gap-3.5">
         <PageTitle tab="Prompt Maker">Make a study prompt</PageTitle>
         <Choices label="Subject" options={subjects} value={subject} onPick={changed(setSubject)} />
         <Choices label="Goal" options={goals} value={goal} onPick={changed(setGoal)} />
         <div className="flex flex-col gap-2.5">
-          <label htmlFor="topic" className="text-xl font-bold">
-            Topic
-          </label>
+          <div className="flex items-baseline gap-4">
+            <label htmlFor="topic" className="text-xl font-bold">
+              Topic
+            </label>
+            <p id="topic-error" role="alert" className="text-lg font-bold text-wrong">
+              {status.kind === "needsTopic" && "Type a topic first"}
+            </p>
+          </div>
           <input
             ref={input}
             id="topic"
@@ -69,12 +74,9 @@ export function PromptMakerPage() {
             aria-describedby="topic-error"
             className="h-[58px] w-full rounded-lg border-2 border-edge bg-panel px-4 text-xl font-bold aria-invalid:border-wrong"
           />
-          <p id="topic-error" role="alert" className="min-h-7 text-lg font-bold text-wrong">
-            {status.kind === "needsTopic" && "Type a topic first"}
-          </p>
         </div>
       </div>
-      <section aria-label="Your prompt" className="lit flex min-w-0 flex-[3_1_460px] flex-col justify-between gap-7 rounded-[14px] bg-lamp p-8 text-ground md:p-11">
+      <section aria-label="Your prompt" className="lit flex min-w-0 flex-[1_1_420px] flex-col justify-between gap-7 rounded-[14px] bg-lamp p-8 text-ground md:p-10">
         <p data-testid="prompt" className="text-[27px] leading-[1.42] break-words">
           {prompt.before}
           <strong className="underline decoration-[3px] underline-offset-[5px]">{prompt.topic || "your topic"}</strong>

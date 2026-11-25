@@ -11,7 +11,7 @@ export function HomePage() {
   const progress = useProgress();
   const next = nextLesson(progress);
   return (
-    <main className="flex flex-1 flex-wrap gap-8 px-6 pt-5 pb-10 md:px-10">
+    <main className="flex flex-1 flex-wrap gap-8 px-6 pt-4 pb-6 md:px-10">
       {next ? (
         <NextUp
           over={next.course.title}
@@ -35,9 +35,9 @@ export function HomePage() {
 
 function NextUp({ over, title, to, action, note }: { over: string; title: string; to: string; action: string; note?: string }) {
   return (
-    <section className="lit flex min-h-[420px] flex-[3_1_480px] flex-col justify-between gap-8 rounded-[14px] bg-lamp p-8 text-ground md:p-12">
+    <section className="lit flex min-h-[420px] flex-[3_1_480px] flex-col justify-between gap-6 rounded-[14px] bg-lamp p-8 text-ground md:p-11 lg:max-h-[calc(100dvh-112px)]">
       <p className="text-xl font-bold">{over}</p>
-      <PageTitle tab="Home" className="text-6xl leading-[0.98] tracking-[-0.02em] xl:text-[88px]">
+      <PageTitle tab="Home" className="text-[clamp(48px,11.5vh,96px)] leading-[0.98] tracking-[-0.02em]">
         {title}
       </PageTitle>
       <div className="flex flex-wrap items-center gap-x-7 gap-y-5">
@@ -52,7 +52,7 @@ function NextUp({ over, title, to, action, note }: { over: string; title: string
 
 function TabCard({ letter, title, note, to }: { letter: string; title: string; note: string; to: string }) {
   return (
-    <Link to={to} className="flex min-h-24 flex-1 items-center gap-6 rounded-[14px] border-2 border-edge bg-panel px-7 py-4 hover:border-white">
+    <Link to={to} className="flex min-h-20 flex-1 items-center gap-6 rounded-[14px] border-2 border-edge bg-panel px-7 py-3 hover:border-white">
       <span aria-hidden className="w-11 shrink-0 text-[56px] leading-none font-bold text-sky">
         {letter}
       </span>
@@ -71,7 +71,7 @@ function LevelCard({ progress }: { progress: Progress }) {
   const into = xpIntoLevel(xp);
   const left = `${XP_PER_LEVEL - into} XP to level ${levelOf(xp) + 1}`;
   return (
-    <section className="flex flex-1 flex-col justify-center gap-3 px-1 pt-4">
+    <section className="flex flex-1 flex-col justify-center gap-2.5 px-1 pt-2">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4">
         <h2 className="text-[28px] leading-none font-bold">Level {levelOf(xp)}</h2>
         <span className="text-lg text-soft">{left}</span>

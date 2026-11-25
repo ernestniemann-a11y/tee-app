@@ -37,7 +37,7 @@ export function SortIt({ step, answered, onAnswer }: CheckInProps<SortStep>) {
             type="button"
             disabled={answered}
             onClick={() => drop(b)}
-            className="flex min-h-[260px] flex-col items-stretch gap-3 rounded-[14px] border-2 border-edge bg-panel p-4 text-center enabled:hover:border-white"
+            className="flex min-h-[230px] flex-col items-stretch gap-3 rounded-[14px] border-2 border-edge bg-panel p-4 text-center enabled:hover:border-white"
           >
             <span className="text-[26px] font-bold">{bucket}</span>
             {step.items.map((item, i) => {
