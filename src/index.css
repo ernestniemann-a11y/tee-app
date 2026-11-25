@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Every color in TEE. "lamp" is only for the next step, the open item or the right answer. */
+@theme {
+  --color-ground: #20242b;
+  --color-panel: #2e343d;
+  --color-edge: #8a96a8;
+  --color-lamp: #ffe9a8;
+  --color-sky: #7cc4ff;
+  --color-soft: #c9d1dc;
+  --color-wrong: #ffb0a6;
+  --color-correct: #8fe8b4;
+  --font-sans: "Atkinson Hyperlegible", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    background: var(--color-ground);
+    color: #fff;
+    color-scheme: dark;
+  }
+  button,
+  summary {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: default;
+  }
+  input::placeholder {
+    color: var(--color-soft);
+    opacity: 1;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-sky);
+    outline-offset: 3px;
+  }
+  /* On a lit panel the sky ring would be too faint, so use the dark one. */
+  .lit :focus-visible {
+    outline-color: var(--color-ground);
+  }
+  h1:focus {
+    outline: none;
+  }
+}

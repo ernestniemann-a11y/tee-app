@@ -1,0 +1,188 @@
+[
+  {
+    "id": "what-is-ai",
+    "title": "What is AI?",
+    "lessons": [
+      {
+        "id": "what-is-ai-really",
+        "title": "What is AI, really?",
+        "explainer": {
+          "cards": [
+            { "text": "Most apps follow rules that people wrote", "words": ["If", "this", "then", "that"] },
+            { "text": "AI learns its own patterns from examples", "shapes": ["oso", "sos", "oso"] },
+            { "text": "You already use it every day", "words": ["Maps", "Autocorrect", "Playlists", "Face unlock"] }
+          ]
+        },
+        "steps": [
+          {
+            "id": "playlist",
+            "type": "thisOrThat",
+            "question": "A music app picks your next song",
+            "options": ["AI", "Not AI"],
+            "answer": 0,
+            "why": "It learns from what you play and skip.",
+            "learnMore": "Apps like this compare your listening with lots of other people's to guess what you'll like."
+          },
+          {
+            "id": "uses-ai",
+            "type": "sort",
+            "question": "Which ones use AI?",
+            "buckets": ["Uses AI", "No AI"],
+            "items": [
+              { "text": "Face unlock", "bucket": 0 },
+              { "text": "Basic calculator", "bucket": 1 },
+              { "text": "Voice typing", "bucket": 0 },
+              { "text": "Light switch", "bucket": 1 }
+            ],
+            "why": "AI learned from examples. The others follow fixed steps.",
+            "learnMore": "A calculator gives the same answer every time because someone wrote the exact rules for it."
+          },
+          {
+            "id": "every-app",
+            "type": "trueFalse",
+            "statement": "Every smart-looking app uses AI",
+            "answer": false,
+            "why": "Lots of apps just follow fixed rules.",
+            "learnMore": "An alarm clock app feels smart, but it only does what its rules say: ring at the time you set."
+          }
+        ]
+      },
+      {
+        "id": "how-ai-learns",
+        "title": "How AI learns",
+        "explainer": {
+          "cards": [
+            { "text": "Show AI lots of examples", "shapes": ["oso", "sos", "oso"] },
+            { "text": "It finds what they share", "shapes": ["oo.ss", "oo.ss", "oo.ss"] },
+            { "text": "Then it guesses on new ones", "shapes": [".?.", ".v.", "ooo"] }
+          ]
+        },
+        "steps": [
+          {
+            "id": "how",
+            "type": "tap",
+            "question": "How does AI learn?",
+            "options": ["Someone types in every rule", "It finds patterns in examples", "It reads your mind"],
+            "answer": 1,
+            "why": "AI finds patterns in lots of examples.",
+            "learnMore": "Show it thousands of cat photos and it works out which shapes usually mean a cat."
+          },
+          {
+            "id": "more",
+            "type": "thisOrThat",
+            "question": "Which teaches AI more?",
+            "options": ["10 cat photos", "10,000 cat photos"],
+            "answer": 1,
+            "why": "More examples show more patterns.",
+            "learnMore": "Variety matters too. Photos of one cat won't teach it about every cat."
+          },
+          {
+            "id": "helps",
+            "type": "sort",
+            "question": "What helps AI learn cats?",
+            "buckets": ["Helps", "Doesn't help"],
+            "items": [
+              { "text": "Cat photos", "bucket": 0 },
+              { "text": "Blank photos", "bucket": 1 },
+              { "text": "Labels that say cat", "bucket": 0 },
+              { "text": "Random noise", "bucket": 1 }
+            ],
+            "why": "Clear examples teach. Empty ones don't.",
+            "learnMore": "A label tells AI what a photo shows, so it knows which pattern to look for."
+          },
+          {
+            "id": "dogs",
+            "type": "trueFalse",
+            "statement": "AI trained only on cats would know dogs",
+            "answer": false,
+            "why": "It only knows patterns it has seen.",
+            "learnMore": "Show it a dog and it may just guess cat, because that's all it has."
+          }
+        ]
+      },
+      {
+        "id": "how-chatbots-write",
+        "title": "How chatbots write",
+        "explainer": {
+          "cards": [
+            { "text": "A chatbot guesses what comes next", "words": ["The", "sky", "is", "?"] },
+            { "text": "It picks from likely words", "words": ["blue", "cloudy", "clear"] },
+            { "text": "Then it repeats, piece by piece", "words": ["The", "sky", "is", "blue", "?"] }
+          ]
+        },
+        "steps": [
+          {
+            "id": "next-word",
+            "type": "tap",
+            "question": "Peanut butter and...",
+            "options": ["Tuesday", "Homework", "Jelly"],
+            "answer": 2,
+            "why": "You guessed the likely next word, like a chatbot does.",
+            "learnMore": "Chatbots really work with small pieces of words, called tokens."
+          },
+          {
+            "id": "same-twice",
+            "type": "thisOrThat",
+            "question": "You ask a chatbot the same thing twice",
+            "options": ["Always the same answer", "The answer can change"],
+            "answer": 1,
+            "why": "It can pick a different likely word each time.",
+            "learnMore": "Most chatbots add a little randomness so their writing doesn't sound like a copy."
+          },
+          {
+            "id": "lookup",
+            "type": "trueFalse",
+            "statement": "A chatbot looks up every answer in a book of facts",
+            "answer": false,
+            "why": "It predicts words. It isn't reading from a fact list.",
+            "learnMore": "Some chatbots can also search the web, but they still write by predicting."
+          }
+        ]
+      },
+      {
+        "id": "why-ai-gets-things-wrong",
+        "title": "Why AI gets things wrong",
+        "explainer": {
+          "cards": [
+            { "text": "Sounding right isn't being right", "words": ["Sounds right", "?", "Is right"] },
+            { "text": "AI can make up facts and sources", "words": ["Fake quote", "Fake book", "Fake date"] },
+            { "text": "So check anything that has to be true", "words": ["Look it up", "Compare", "Ask"] }
+          ]
+        },
+        "steps": [
+          {
+            "id": "confident",
+            "type": "trueFalse",
+            "statement": "If AI sounds sure, it's right",
+            "answer": false,
+            "why": "It sounds just as sure when it's wrong.",
+            "learnMore": "It's built to write likely words, and a confident tone is very common in what it learned from."
+          },
+          {
+            "id": "check-it",
+            "type": "sort",
+            "question": "Use it, or check it first?",
+            "buckets": ["Use it", "Check first"],
+            "items": [
+              { "text": "Club name ideas", "bucket": 0 },
+              { "text": "Quote for an essay", "bucket": 1 },
+              { "text": "Health advice", "bucket": 1 },
+              { "text": "Silly birthday poem", "bucket": 0 }
+            ],
+            "why": "Check anything that has to be true.",
+            "learnMore": "For health questions, talk to a doctor, school nurse or another adult you trust."
+          },
+          {
+            "id": "source",
+            "type": "tap",
+            "question": "AI gives you a source. Now what?",
+            "options": ["Find it yourself", "Paste it in", "Ask AI if it's sure"],
+            "answer": 0,
+            "why": "AI can invent sources that look real.",
+            "learnMore": "Search for the exact title. If you can't find it anywhere, don't use it."
+          }
+        ]
+      }
+    ]
+  }
+]

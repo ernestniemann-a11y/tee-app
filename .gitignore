@@ -2,12 +2,11 @@
 .DS_Store
 .vscode/
 .idea/
+.claude/
 
 # Dependencies & builds
 node_modules/
 dist/
-build/
-.expo/
 *.log
 
 # Secrets — never commit these
